@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout - Prevail Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">Collectibles By Kate</div>
+    <nav>
+        <a href="onlinestore.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+</header>
+
+<section class="checkout-section">
+    <h1>Checkout</h1>
+
+    <form id="paymentForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <input type="text" id="address" placeholder="Delivery Address" required>
+
+        <h2>Total: ₦<span id="checkout-total">0</span></h2>
+
+        <button type="submit" class="checkout-btn">
+            Pay Now
+        </button>
+    </form>
+</section>
+
+<script src="checkout.js"></script>
+</body>
+</html>
